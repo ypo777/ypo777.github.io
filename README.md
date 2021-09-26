@@ -17,7 +17,8 @@ The color variables are all defined in src/styles/variables.js. The variable nam
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#447AAC` |
 
 ##### Deloyed using gh-pages
-
+## Acknowledgements
+- [Brittany Chiang](https://github.com/bchiang7)
 
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
