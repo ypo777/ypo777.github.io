@@ -3,19 +3,17 @@ import { css } from 'styled-components';
 const variables = css`
   :root {
     --dark-navy: #020c1b;
-    --navy: #e6f1ff;
-    --light-navy: #112240;
+    --navy: #ffffff;
+    --light-navy: #ffffff;
     --lightest-navy: #f3f1f5;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-slate: #f3f1f5;
     --slate: #5c7aea;
-    --light-slate: #141e61;
-    --lightest-slate: #14279b;
+    --light-slate: #14279b;
+    --lightest-slate: #141e61;
     --white: #e6f1ff;
     --green: #5c7aea;
-    --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
-    --blue: #57cbff;
+    --green-tint: #141e61;
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
