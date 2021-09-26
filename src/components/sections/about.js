@@ -82,8 +82,8 @@ const StyledPic = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      // mix-blend-mode: multiply;
-      // filter: grayscale(100%) contrast(1);
+      mix-blend-mode: multiply;
+      // filter: grayscale(0%) contrast(1);
       transition: var(--transition);
     }
 
@@ -146,15 +146,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Yan Paing Oo and I enjoy creating things that make repeated manual
-              workflow to automation tasks.My interest is in AI and CI/CD.
+              Hello! My name is Yan Paing Oo and I enjoy creating things that make manual
+              workflow to automation tasks.
             </p>
             <p>
               I am a student at University of Information Technoglogy Yangon{' '}
               <a href="https://www.facebook.com/UITMyanmar/"> (UIT) </a> ,{' '}
             </p>
             <p>Major - Knowledge Engineering</p>
-            <p>Specialize Field - Machine Learning</p>
             <p>
               Fast-forward to today, and I am mostly active at{' '}
               <a href="https://www.kaggle.com/sherrinford77/"> Kaggle. </a>,{' '}

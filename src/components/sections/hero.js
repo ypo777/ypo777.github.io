@@ -65,9 +65,8 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        Machine Learning Model. Currently, I’m focused on building Automation Tools, Easly to Use
-        products at .
+        I’m a software engineer specializing in building
+        Machine Learning Model. Currently, I’m focused on building Automation Tools.
       </p>
     </>
   );
