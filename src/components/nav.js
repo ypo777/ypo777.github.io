@@ -73,7 +73,7 @@ const StyledNav = styled.nav`
       &:hover,
       &:focus {
         svg {
-          fill: var(--green-tint);
+          // fill: var(--green);
         }
       }
 

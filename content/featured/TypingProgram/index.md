@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Typing Pracitice Program'
-cover: './course-card.png'
+cover: './demo.png'
 github: 'https://www.github.com/ypo777/Typing-Practice-Program'
 cta: ''
 tech:

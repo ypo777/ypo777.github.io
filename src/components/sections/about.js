@@ -83,7 +83,7 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      // filter: grayscale(0%) contrast(1);
+      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
@@ -101,7 +101,7 @@ const StyledPic = styled.div`
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--navy);
+      background-color: var(--slate);
       mix-blend-mode: screen;
     }
 
@@ -133,9 +133,12 @@ const About = () => {
     'C++',
     'PHP',
     'Docker',
-    'Pandas/Numpy',
-    'Sklearn',
     'Bash',
+  ];
+  const current_learning = [
+    'Pandas',
+    'Numpy',
+    'Sklearn',
   ];
 
   return (
@@ -159,11 +162,16 @@ const About = () => {
               <a href="https://www.kaggle.com/sherrinford77/"> Kaggle.</a>{' '}
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
-          </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
+
+          <p> Currently I am learning this technologies: </p>
+          <ul className="skills-list">
+            {current_learning && current_learning.map((current,j) => <li key={j}>{current}</li>)}
+          </ul>
+        </div>
         </StyledText>
 
         <StyledPic>
