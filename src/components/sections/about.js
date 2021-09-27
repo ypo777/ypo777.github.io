@@ -151,12 +151,12 @@ const About = () => {
             </p>
             <p>
               I am a student at University of Information Technoglogy Yangon{' '}
-              <a href="https://www.facebook.com/UITMyanmar/"> (UIT) </a> ,{' '}
+              <a href="https://www.facebook.com/UITMyanmar/"> (UIT)</a>{' '}
             </p>
             <p>Major - Knowledge Engineering</p>
             <p>
               Fast-forward to today, and I am mostly active at{' '}
-              <a href="https://www.kaggle.com/sherrinford77/"> Kaggle. </a>,{' '}
+              <a href="https://www.kaggle.com/sherrinford77/"> Kaggle.</a>{' '}
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
