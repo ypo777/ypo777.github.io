@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ypo777.github.io/sitemap/sitemap-index.xml
+Sitemap: https://ypo777.github.io/sitemap.xml
 Host: https://ypo777.github.io
