@@ -8,6 +8,5 @@ tech:
 showInProjects: true
 ---
 
-How it will works <br>
-Move Files according to Type And Create Folder Name With Type in Documents.
-Two Modes ( Auto & Manual Selection)
+- Move Files according to Type And Create Folder Name With Type in Documents.
+- Two Modes ( Auto & Manual Selection)
