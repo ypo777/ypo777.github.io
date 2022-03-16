@@ -6,22 +6,22 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/ypo777',
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/ypo007',
-    },
+    //{
+    //  name: 'Instagram',
+    //  url: 'https://www.instagram.com/ypo007',
+    //},
     {
       name: 'Twitter',
       url: 'https://twitter.com/YPO_007',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/yan-paing-oo-759a4b166',
+      url: 'https://www.linkedin.com/in/ypo777',
     },
-    {
-      name: 'Codepen',
-      url: 'https://ypo777.github.io/',
-    },
+    // {
+    //   name: 'Website',
+    //   url: 'https://ypo777.github.io/',
+    // },
   ],
 
   navLinks: [
