@@ -40,7 +40,7 @@ V2ray VPN ကို Setup လုပ်တာကို Bash, Ansible, Docker တ�
 
 <a name="bash"></a>
 
-### Bash Script ကို အသုံးပြုခြင်း
+### Bash Script ကိုသုံးပြီး setup လုပ်ခြင်း
 
 VPS ကို ssh နဲ့ login ဝင်ပြီးရင် အောက်က cmd ကို run လိုက်ပါ။
 Cmd run ရင် Email , Domain & TimeZone ကို ထည့်ပေးရမယ်။
@@ -51,7 +51,7 @@ bash <(curl -s https://raw.githubusercontent.com/ypo777/x-ui-panel/main/Bash/v2r
 
 <a name="docker"></a>
 
-### Docker ကိုအသုံးပြုခြင်း
+### Docker ကိုသုံးပြီး setup လုပ်ခြင်း
 
 First - Pull Docker Container to Your VPS
 
@@ -69,7 +69,7 @@ Last - [Get SSL](#ssl)
 
 <a name="ansible"></a>
 
-### Ansible ကို အသုံးပြုဖြင်း
+### Ansible ကိုသုံးပြီး setup လုပ်ခြင်း
 
 Ansible Inventory မှာ VPS ရဲ့ IP Address, SSH Username & Keys ကိုထည့်ပါ
 
