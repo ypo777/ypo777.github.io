@@ -1,9 +1,9 @@
 ---
-title: How to setup x-ui panel for v2ray vpn
+title: How to setup X-UI panel for v2ray vpn
 description: setup v2ray using Bash, Ansible, Docker
 date: 2022-03-22
 draft: false
-slug: /pensieve/v2ray-vpn
+slug: /pensieve/x-ui
 tags:
   - Ansible
   - Bash
@@ -13,7 +13,7 @@ tags:
 ## မာတိကာ
 
 1. [Getting Started](#getting-started)
-2. [Setup using differnet methods](#setup)
+2. [Setup X-UI using differnet methods](#setup)
    - [Bash](#bash)
    - [Docker](#docker)
    - [Ansible](#ansible)
@@ -24,26 +24,29 @@ tags:
 
 ## 1. Getting Started
 
-V2ray VPN ကို Setup လုပ်တာကို Bash, Ansible, Docker တွေကိုသုံးပြီး setup လုပ်မှဖြစ်တယ် <br>
+X-UI Panel ကို Setup လုပ်တာကို Bash, Ansible, Docker တွေကိုသုံးပြီး setup လုပ်မှဖြစ်တယ် <br>
 လိုအပ်သည့်အရာများ
 
-- Domain
-- VPS
+- Domain Name
+- Server
 - Cloudflare Account
 
-ပထမဆုံး Domain ကို Cloudflare ရဲ့ Nameserver ထည့်ပေးရမယ်။ ပြီးရင် VPS IP ကို Domain ဆီကို A Record နဲ့ Point ပေးရမယ်။ <br>
-[How to Point Domain to VPS IP?](https://privacymelon.com/how-to-setup-v2ray-ws-tls-cdn/)
+ပထမဆုံး Domain Name ကို Cloudflare ရဲ့ Name Server ထည့်ပေးရမယ်။ ပြီးရင် Server IP ကို Domain Name ဆီကို A Record နဲ့ Point ပေးရမယ်။ <br>
+
+**If you don't know how to do this step** -> [How to Point Domain to VPS IP?](https://privacymelon.com/how-to-setup-v2ray-ws-tls-cdn/#setup)
 
 <a name="setup"></a>
 
-## 2. Setup using differnet methods
+## 2. Setup X-UI Panel using differnet methods
 
 <a name="bash"></a>
 
 ### Bash Script ကိုသုံးပြီး setup လုပ်ခြင်း
 
-VPS ကို ssh နဲ့ login ဝင်ပြီးရင် အောက်က cmd ကို run လိုက်ပါ။
-Cmd run ရင် Email , Domain & TimeZone ကို ထည့်ပေးရမယ်။
+Server ကို ssh နဲ့ login ဝင်ပြီးရင် အောက်က command ကို run လိုက်ပါ။
+Run ရင် Email , Domain & TimeZone ကို ထည့်ပေးရမယ်။
+<br>
+If You Don't Know Your TimeZone -> **[TimeZone List](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)**
 
 ```shell
 bash <(curl -s https://raw.githubusercontent.com/ypo777/x-ui-panel/main/Bash/v2ray_setup.sh )
@@ -67,11 +70,23 @@ docker run --restart=always --name x-ui -d -p 54321:54321 -p 8000-8010:8000-8010
 
 Last - [Get SSL](#ssl)
 
+Email & Domain Name ကို မိမိအသုံးပြုမိဟာနဲ့ ပြောင်းပါ
+
+```shell
+sudo certbot certonly --standalone --preferred-challenges http --agree-tos --email your-email-address -d test.example.com
+```
+
+SSL ကို ရက် ၉၀ တခါ Update လုပ်ချင်ရင်
+
+```shell
+certbot renew --force-renewal
+```
+
 <a name="ansible"></a>
 
 ### Ansible ကိုသုံးပြီး setup လုပ်ခြင်း
 
-Ansible Inventory မှာ VPS ရဲ့ IP Address, SSH Username & Keys ကိုထည့်ပါ
+Ansible Inventory မှာ Server ရဲ့ IP Address, SSH Username & Key Path ကိုထည့်ပါ
 
 ```shell
 ansible-playbook v2raysetup.yaml
