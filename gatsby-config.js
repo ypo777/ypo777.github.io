@@ -6,7 +6,7 @@ module.exports = {
     description:
       'Yan Paing Oo is a student currently attending in UIT(Yangon) Knowledge Engineering Major',
     siteUrl: 'https://ypo777.github.io', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/og_new.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@YPO_007',
   },
 
